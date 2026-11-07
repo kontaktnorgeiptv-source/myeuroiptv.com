@@ -28,7 +28,7 @@ const BRAND = "MY EURO IPTV";
 // Must match index.html exactly — these are the anchors the template is patched on.
 const TPL_HTML_TAG = '<html lang="de">';
 const TPL_CANONICAL = `<link rel="canonical" href="${SITE}/" />`;
-const TPL_TITLE = "<title>IPTV Deutschland kaufen | Premium IPTV Anbieter</title>";
+const TPL_TITLE = "<title>MY EURO IPTV | Premium IPTV Europe — 4K/8K Channels</title>";
 
 const template = readFileSync(resolve(DIST, "index.html"), "utf8");
 
@@ -451,12 +451,12 @@ for (const tLang of HOME_LANGS) {
 // ---- homepage (per language) -----------------------------------------------
 const HOME_TITLE: Record<string, string> = {
   de: "IPTV Deutschland kaufen | Premium IPTV Anbieter",
-  en: "IPTV Germany | Buy German IPTV — Premium IPTV Provider",
+  en: "MY EURO IPTV | Premium IPTV Europe — 4K/8K Channels",
   nl: "MY EURO IPTV | Premium IPTV Abonnement & 4K Zenders",
 };
 const HOME_DESC: Record<string, string> = {
   de: "IPTV Deutschland kaufen bei Ihrem Premium IPTV Anbieter: 69.000+ Live-Sender, 220.000+ Filme & Serien in bis zu 8K. IPTV Abo für Smart TV, Android & Fire TV — ohne Vertrag.",
-  en: "IPTV Germany made simple: buy German IPTV from a premium IPTV provider. 69,000+ live channels, 220,000+ movies & series in up to 8K. Works on Smart TV, Android & Fire TV.",
+  en: "MY EURO IPTV — premium IPTV Europe. 69,000+ live channels and 220,000+ movies & series in up to 8K on Smart TV, Android & Fire TV. No contract. ★ 4.9/5",
   nl: "MY EURO IPTV op www.myeuroiptv.com: premium IPTV-abonnement. 69.000+ live zenders, 220.000+ films & series in tot 8K. IPTV kopen voor Smart TV, Android & Fire TV.",
 };
 const HOME_BODY: Record<string, string[]> = {
