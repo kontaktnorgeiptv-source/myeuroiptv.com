@@ -157,8 +157,7 @@ function hreflangSet(pathSuffix: string): HreflangLink[] {
 }
 
 function langToPrefix(lang: string): string {
-  if (lang === "de" || lang === "nl" || lang === "en") return `/${lang}`;
-  return "/en";
+  return lang ? `/${lang}` : "/en";
 }
 
 function postUrl(slug: string, lang?: string): string {

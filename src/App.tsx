@@ -109,9 +109,9 @@ function GeoRedirect() {
         if (c === "GB" || c === "IE" || c === "US") window.location.replace("/en");
         else if (c === "NL" || c === "BE") window.location.replace("/nl");
         // Germany/DACH is the default market: everything else lands on /de.
-        else window.location.replace("/de");
+        else window.location.replace("/en");
       })
-      .catch(() => window.location.replace("/de"));
+      .catch(() => window.location.replace("/en"));
   }, []);
 
   return (
